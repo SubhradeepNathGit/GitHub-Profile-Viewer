@@ -1,0 +1,150 @@
+/* Profile Page Container */
+.profile-container {
+  max-width: 1080px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Error Alert Styling */
+.error-alert {
+  background-color: #ffe0e0;
+  color: #d93025;
+  border: 1px solid #f44336;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #0073e6;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.profile-follow {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.view-profile-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-profile-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Repositories Section */
+.repo-section {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.repo-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Repo Item */
+.repo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.repo-item:hover {
+  background-color: #f9fafc;
+}
+
+.repo-left {
+  flex: 1;
+}
+
+.repo-name {
+  color: #0366d6;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.repo-name:hover {
+  color: #024ea2;
+}
+
+.repo-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Stars + Forks */
+.repo-badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  background-color: #e1e4e8;
+  color: #24292e;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .repo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .repo-badges {
+    margin-top: 0.5rem;
+  }
+
+  .profile-container {
+    padding: 0 1rem;
+  }
+}

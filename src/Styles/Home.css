@@ -1,0 +1,21 @@
+.home-container {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-input-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
