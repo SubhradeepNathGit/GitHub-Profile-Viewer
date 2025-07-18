@@ -83,7 +83,7 @@ npm run dev
 Visit: [http://localhost:5173](http://localhost:5173)
 
 
-### ⚙️ Environment Setup
+## ⚙️ Environment Setup
 
 Create a `.env` file in the root directory and add your GitHub token:
 
@@ -91,7 +91,31 @@ Create a `.env` file in the root directory and add your GitHub token:
 VITE_GITHUB_TOKEN=your_personal_access_token
 ```
 
-> **Note:** Never commit `.env` files. They are included in `.gitignore`.
+> ✅ **Note:** The `.env` file is ignored in `.gitignore` to protect your credentials.
+
+### 🔐 Create `axiosinstance.js`
+
+Since the token is securely stored in `.env`, you must create this file manually:
+
+**Path:** `src/API/axiosinstance.js`
+
+```js
+import axios from "axios";
+
+const token = import.meta.env.VITE_GITHUB_TOKEN;
+
+const axiosInstance = axios.create({
+  baseURL: "https://api.github.com",
+  headers: {
+    Authorization: `token ${token}`,
+  },
+});
+
+export default axiosInstance;
+```
+
+> ⚠️ This file is intentionally not included in version control. Please create it locally to ensure the app runs properly.
+
 ---
 
 ### 🧪 Usage Guide
