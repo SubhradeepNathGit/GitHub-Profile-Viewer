@@ -46,7 +46,6 @@ This project showcases the integration of a third-party API in a React app using
 
 </div>
 <br/>
----
 
 ## ⚙️ Getting Started
 
